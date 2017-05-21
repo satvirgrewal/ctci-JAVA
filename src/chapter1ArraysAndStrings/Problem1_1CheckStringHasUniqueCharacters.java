@@ -10,7 +10,7 @@ public class Problem1_1CheckStringHasUniqueCharacters {
 		boolean[] counter = new boolean[256];
 		String duplicate = "unique";
 		for(int i=0;i<ip.length();i++){
-			if(counter[ip.charAt(i)]==true){
+			if(ip.charAt(i)!=' ' && counter[ip.charAt(i)]==true){
 				duplicate = "repeated";
 				break;
 			}
